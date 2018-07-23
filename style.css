@@ -1,0 +1,53 @@
+body{
+  padding: 0px;
+  margin: 0px;
+}
+nav{
+  width: 100%;
+    background: #efefef;
+}
+.toggle{
+  width: 100%;
+  text-align: right;
+  padding: 10px 20px;
+  background: green;
+  box-sizing: border-box;
+  display: none;
+
+}
+ul{
+  width: 80%;
+
+  margin: 0 auto;
+  padding: 0px;
+}
+ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 20px;
+  text-align: center;
+}
+ul li:hover{
+  background: #a9783d;
+
+}
+ul li a{
+  text-decoration: none;
+color: #000;
+  font-size: 16px;
+}
+@media (max-width:768px){
+  .toggle{
+    display: block;
+  }
+  ul{
+    width: 100%;
+    display: none;
+  }
+  ul li{
+    display: block;
+  }
+  .active{
+    display: block;
+  }
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Responsive menu</title>
+</head>
+<body>
+<nav>
+  <div class="toggle active"><span class="menu"><img src="preferences.svg" alt="" width="18px;"></span></div>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Locations</a></li>
+    <li><a href="#">Shop</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Relationships</a></li>
+    <li><a href="#">Franchise</a></li>
+  </ul>
+</nav>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script>
+
+  $(document).ready(function(){
+    $('.menu').click(function(){
+      $('ul').toggleClass('active');
+    })
+  })
+  </script>
+
+
+</body>
+</html>
